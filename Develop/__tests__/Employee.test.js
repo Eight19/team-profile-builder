@@ -1,19 +1,31 @@
+const Employee = require("../lib/Employee.js");
+
 describe("Employee", () => {
-    it('should have a name', () => {
-      const employee = new Employee('Guy', 1, 'fun@guy.com');
-      expect(employee.name).toEqual('Guy');
+  describe('Initialization', () => {
+    describe("getName", () => {    
+    it('should have an object with an employee name', () => {
+      const employee = new Employee('Tevyn', 1, 'Tevyn@homecaretev.com');
+      expect(employee.getName).toEqual('Tevyn');
     });
-    it ('should have an id', () => {
-      const employee = new Employee('Guy', 1, 'fun@guy.com');
-      expect(employee.id).toEqual(1);
-    })
-    it ('should have an email', () => {
-      const employee = new Employee('Guy', 1, 'fun@guy.com');
-      expect(employee.email).toEqual('fun@guy.com');
-    })
-    it ('should have a role', () => {
-      const employee = new Employee('Guy', 1, 'fun@guy.com');
+  });
+});
+    describe('getId', () => {
+    it ('should have an object with an employee id', () => {
+      const employee = new Employee('Tevyn', 1, 'Tevyn@homecaretev.com');
+      expect(employee.getId).toEqual(1);
+    });
+  });
+    describe('getEmail', () => { 
+    it ('should have an object with an employee email', () => {
+      const employee = new Employee('Tevyn', 1, 'Tevyn@homecaretev.com');
+      expect(employee.getEmail).toEqual('Tevyn@homecaretev.com');
+    });
+  });
+    describe('getRole', () => {
+    it ('should have an object with an employee role', () => {
+      const employee = new Employee('Tevyn', 1, 'Tevyn@homecaretev.com');
       expect(employee.getRole()).toEqual('Employee');
-    })
+    });
+  });
   });
   

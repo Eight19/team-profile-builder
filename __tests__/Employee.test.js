@@ -5,20 +5,20 @@ describe("Employee", () => {
     describe("getName", () => {    
     it('should have an object with an employee name', () => {
       const employee = new Employee('Tevyn', 1, 'Tevyn@homecaretev.com');
-      expect(employee.getName).toEqual('Tevyn');
+      expect(employee.getName()).toEqual('Tevyn');
     });
   });
 });
     describe('getId', () => {
     it ('should have an object with an employee id', () => {
       const employee = new Employee('Tevyn', 1, 'Tevyn@homecaretev.com');
-      expect(employee.getId).toEqual(1);
+      expect(employee.getId()).toEqual(1);
     });
   });
     describe('getEmail', () => { 
     it ('should have an object with an employee email', () => {
       const employee = new Employee('Tevyn', 1, 'Tevyn@homecaretev.com');
-      expect(employee.getEmail).toEqual('Tevyn@homecaretev.com');
+      expect(employee.getEmail()).toEqual('Tevyn@homecaretev.com');
     });
   });
     describe('getRole', () => {
@@ -27,5 +27,5 @@ describe("Employee", () => {
       expect(employee.getRole()).toEqual('Employee');
     });
   });
-  });
+ });
   
